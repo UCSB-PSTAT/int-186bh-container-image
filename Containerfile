@@ -4,7 +4,9 @@ MAINTAINER LSIT Systems <lsitops@lsit.ucsb.edu>
 
 USER root
 
-RUN mamba install -y nltk networkx tensorflow-cpu plotly pymupdf dlib spacy
+RUN pip install tensorflow-cpu
+
+RUN mamba install -y nltk networkx plotly pymupdf dlib spacy
 
 RUN pip install deepface gensim
 
